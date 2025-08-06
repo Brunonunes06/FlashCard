@@ -9,9 +9,17 @@ body {
     font-family: Bai Jamjuree;
 }
 
+/* código omitido */
+
 #container {
-    display: flex; 
+    display: flex;
+     flex-wrap: wrap;
+     justify-content: space-between;
+     padding: 4rem;
+     gap: 3rem;
 }
+
+/* código omitido */
 
 .cartao {
     margin: 1rem 1rem;
@@ -59,7 +67,7 @@ body {
     font-weight: 700;
 }
 
-.cartao:hover .cartao_conteude{
+.cartao:hover .cartao_conteudo{
     transform: rotateY(180deg);    
 }
 
@@ -83,4 +91,16 @@ footer p {
     text-align: center;
     font-size: 0.6rem;
     margin-top: 0.5rem;
+}
+
+.button:hover {
+    background-color: pink;
+}
+
+div {
+    transform: rotate(45deg);
+}
+
+button {
+    transition: background-color 0.3s ease
 }
