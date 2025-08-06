@@ -25,6 +25,8 @@ body {
     text-align: center;
     /* background-color: aquamarine; */
     height: 100%;
+    transform-style: preserve-3d;
+    transition: transform 300ms ease-in-out;
 }
 
 .cartao__conteudo h3 {
@@ -36,6 +38,7 @@ body {
     margin: 0.6rem;
     border-radius: 0.6rem;
     font-size: 1vw;
+    backface-visibility: hidden;
 }
 
 .cartao__conteudo p {
@@ -53,6 +56,15 @@ body {
     font-weight: 700;
 }
 
+.cartao:hover .cartao_conteude{
+    transform: rotateY(180deg);    
+}
+
+.cartao__conteudo__pergunta,
+.cartao__conteudo__resposta {
+    backface-visibility: hidden;
+    position: absolute;
+}
 footer {
     background-color: black;
     color: white;
